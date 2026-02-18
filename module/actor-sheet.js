@@ -6,8 +6,8 @@ export class SimpleActorSheet extends ActorSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["lam", "sheet", "actor"],
-      template: "systems/lam/templates/actor-sheet.hbs",
+      classes: ["laf", "sheet", "actor"],
+      template: "systems/laf/templates/actor-sheet.hbs",
       width: 600,
       height: 600,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}],

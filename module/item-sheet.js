@@ -7,8 +7,8 @@ export class SimpleItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["lam", "sheet", "item"],
-      template: "systems/lam/templates/item-sheet.hbs",
+      classes: ["laf", "sheet", "item"],
+      template: "systems/laf/templates/item-sheet.hbs",
       width: 520,
       height: 480,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description"}]
