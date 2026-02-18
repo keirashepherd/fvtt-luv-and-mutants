@@ -8,7 +8,7 @@ import * as documents from "./document-classes.js";
 Hooks.once("init", async function() {
   console.log(`Initializing Lasers & Feelings System`);
 
-  game.settings.register("laf", "Name", {
+  game.settings.register("lam", "Name", {
     name: "SIMPLE.Name",
     hint: "SIMPLE.Name",
     scope: "world",
@@ -24,12 +24,12 @@ Hooks.once("init", async function() {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("laf", SimpleActorSheet, {makeDefault: true});
+  Actors.registerSheet("lam", SimpleActorSheet, {makeDefault: true});
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("laf", SimpleItemSheet, {makeDefault: true});
+  Items.registerSheet("lam", SimpleItemSheet, {makeDefault: true});
 
   // Register system settings
-  game.settings.register("laf", "macroShorthand", {
+  game.settings.register("lam", "macroShorthand", {
     name: "SETTINGS.SimpleMacroShorthandN",
     hint: "SETTINGS.SimpleMacroShorthandL",
     scope: "world",
@@ -39,7 +39,7 @@ Hooks.once("init", async function() {
   });
 
   // Register initiative setting.
-  game.settings.register("laf", "initFormula", {
+  game.settings.register("lam", "initFormula", {
     name: "SETTINGS.SimpleInitFormulaN",
     hint: "SETTINGS.SimpleInitFormulaL",
     scope: "world",
@@ -50,7 +50,7 @@ Hooks.once("init", async function() {
   });
 
   // Retrieve and assign the initiative formula setting.
-  const initFormula = game.settings.get("laf", "initFormula");
+  const initFormula = game.settings.get("lam", "initFormula");
   _simpleUpdateInit(initFormula);
 
   CONFIG.Actor.documentClass = documents.ActorLAF;
@@ -82,7 +82,7 @@ Hooks.once("init", async function() {
   }
 
   loadTemplates([
-    "systems/laf/templates/item-sheet-attributes.hbs"
+    "systems/lam/templates/item-sheet-attributes.hbs"
   ]);
 
   CONFIG.LAF ??= {};
@@ -91,10 +91,10 @@ Hooks.once("init", async function() {
 
 async function generateSpaceAdventure() {
   const uuids = [
-    "Compendium.laf.create-a-space-adventure.RollTable.oqBx79uTWQAJYktY",
-    "Compendium.laf.create-a-space-adventure.RollTable.b185BWE94RfeJfrd",
-    "Compendium.laf.create-a-space-adventure.RollTable.whstJAvSM4tfPLFH",
-    "Compendium.laf.create-a-space-adventure.RollTable.WNUaoXqv98X7wFz6"
+    "Compendium.lam.create-a-space-adventure.RollTable.oqBx79uTWQAJYktY",
+    "Compendium.lam.create-a-space-adventure.RollTable.b185BWE94RfeJfrd",
+    "Compendium.lam.create-a-space-adventure.RollTable.whstJAvSM4tfPLFH",
+    "Compendium.lam.create-a-space-adventure.RollTable.WNUaoXqv98X7wFz6"
   ];
 
   const tables = await Promise.all(uuids.map(uuid => fromUuid(uuid)));
