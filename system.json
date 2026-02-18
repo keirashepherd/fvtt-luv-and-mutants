@@ -46,16 +46,6 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
-    },
-    {
-      "lang": "es",
-      "name": "Spanish",
-      "path": "lang/es.json"
-    },
-    {
-      "lang": "pt-br",
-      "name": "Brazilian Portuguese",
-      "path": "lang/pt-br.json"
     }
   ],
   "gridDistance": 5,
