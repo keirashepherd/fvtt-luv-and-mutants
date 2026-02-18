@@ -1,44 +1,38 @@
 {
-  "id": "laf",
-  "title": "Lasers & Feelings",
+  "id": "lam",
+  "title": "Luv & Mutants",
   "description": "An implementation of the adaptable one-page Lasers & Feelings system by John Harper.",
-  "version": "2.3.0",
+  "version": "0.0.1",
   "compatibility": {
     "minimum": 11,
     "verified": 11.315
   },
-  "url": "https://github.com/ElusiveZenith/fvtt-laf",
-  "manifest": "https://raw.githubusercontent.com/ElusiveZenith/fvtt-laf/master/system.json",
-  "download": "https://github.com/ElusiveZenith/fvtt-laf/releases/download/2.3.0/system.zip",
+  "url": "https://github.com/keirashepherd/fvtt-luv-and-mutants",
+  "manifest": "https://raw.githubusercontent.com/keirashepherd/fvtt-luv-and-mutants/master/system.json",
+  "download": "https://github.com/keirashepherd/fvtt-luv-and-mutants/archive/refs/heads/lam.zip",
   "templateVersion": 2,
-  "author": "ElusiveZenith",
-  "authors": [
-    {
-      "name": "ElusiveZenith",
-      "url": "https://github.com/ElusiveZenith",
-      "discord": "@ElusiveZenith"
-    }
-  ],
+  "author": "keirashepherd",
+  "authors": [],
   "contributor": ["Parker S."],
   "packs": [
     {
       "name": "create-a-space-adventure",
       "label": "Create a Space Adventure",
-      "system": "laf",
+      "system": "lam",
       "type": "RollTable",
       "path": "./packs/create-a-space-adventure"
     },
     {
       "name": "standard-space-adventure-generator",
       "label": "Standard Space Adventure Generator",
-      "system": "laf",
+      "system": "lam",
       "type": "Macro",
       "path": "./packs/standard-space-adventure-generator"
     },
     {
       "name": "lasers-and-feelings-rules",
       "label": "Lasers & Feelings PDF",
-      "system": "laf",
+      "system": "lam",
       "type": "JournalEntry",
       "path": "./packs/lasers-and-feelings-rules"
     }
